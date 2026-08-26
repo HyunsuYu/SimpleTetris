@@ -4,9 +4,11 @@
 
 가이드라인(SRS 회전, 7-bag 랜덤, 홀드, 락 딜레이, T-스핀·B2B·콤보 점수)을 따라 구현했습니다.
 
-## 실행
+## 플레이
 
-레포를 받은 뒤 `tetris.html`을 브라우저로 열면 끝입니다.
+**[hyunsuyu.github.io/SimpleTetris](https://hyunsuyu.github.io/SimpleTetris/)** — 바로 플레이할 수 있습니다.
+
+로컬에서 실행하려면 레포를 받은 뒤 `index.html`을 브라우저로 열면 끝입니다.
 
 ```bash
 git clone https://github.com/HyunsuYu/SimpleTetris.git
@@ -90,7 +92,7 @@ Canvas 2D와 `localStorage`만 사용하므로 최신 데스크톱·모바일 �
 
 ## 구조
 
-전체가 `tetris.html` 한 파일이고, 스크립트는 전역을 오염시키지 않도록 IIFE로 감싸져 있습니다.
+전체가 `index.html` 한 파일이고, 스크립트는 전역을 오염시키지 않도록 IIFE로 감싸져 있습니다.
 
 - **보드** — 10 × 20, 셀 30px (캔버스 300 × 600). 스폰 위치는 보드 위쪽 음수 좌표에서 시작합니다.
 - **렌더링** — 메인 보드, 넥스트, 홀드 각각 별도 캔버스. 블록은 그라디언트와 하이라이트를 얹어 그리고, 고스트는 같은 색 외곽선을 28% 투명도로 그립니다.
